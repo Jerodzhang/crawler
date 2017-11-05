@@ -16,7 +16,10 @@ class NgaSpider(scrapy.Spider):
 
     def parse(self, response):
         hxs = Selector(response)
-        title = hxs.xpath('//*[@id="cb_post_title_url"]/text()').extract() 
+        #title = hxs.xpath('//*[@id="cb_post_title_url"]/text()').extract() 
         link = hxs.xpath('//*[@id="cb_post_title_url"]/@href').extract()      
-        for t in title:
-            print t.encode('utf-8')
+        ''' for t in title:
+            print t.encode('utf-8') '''
+        print "URL: "
+        for l in link:
+            print l.encode('utf-8')
