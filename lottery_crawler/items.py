@@ -11,6 +11,10 @@ from scrapy.item import Item, Field
 class LotteryCrawlerItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    title = Field()
-    link = Field()
-    desc = Field()
+    post_title = scrapy.Field()
+    post_url = scrapy.Field()
+    post_bankuai = scrapy.Field()
+    posted = scrapy.Field()
+    torrent_url = scrapy.Field()
+    torrent_downloaded = scrapy.Field()
+    torrent_download_urls = scrapy.Field()
