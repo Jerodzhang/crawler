@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """ This is to define the encoding """
+import scrapy
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 import re
@@ -13,7 +14,7 @@ class NgaSpider(scrapy.Spider):
     #host = "http://bbs.ngacn.cc/"
     allowed_domains = ["dmoztools.net"]
 
-    start_urls = [2，4]
+    start_urls = [2,4]
 
     rules = (
         Rule(LinkExtractor(allow='\d+/\d+/\d+\.html'), follow=True, callback='get_torrent'),

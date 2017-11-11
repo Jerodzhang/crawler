@@ -13,8 +13,3 @@ class LotteryCrawlerItem(scrapy.Item):
     # name = scrapy.Field()
     post_title = scrapy.Field()
     post_url = scrapy.Field()
-    post_bankuai = scrapy.Field()
-    posted = scrapy.Field()
-    torrent_url = scrapy.Field()
-    torrent_downloaded = scrapy.Field()
-    torrent_download_urls = scrapy.Field()

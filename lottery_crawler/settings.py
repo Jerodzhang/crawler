@@ -26,10 +26,10 @@ ROBOTSTXT_OBEY = False
 
 DOWNLOAD_DELAY = 1
 
-ITEM_PIPELINES = {
-    'lottery_crawler.pipelines.LotteryCrawlerPipeline': 300,
-    'scrapy.pipelines.files.FilesPipeline': 2,
-}
+#ITEM_PIPELINES = {
+#    'lottery_crawler.pipelines.LotteryCrawlerPipeline': 300,
+#    'scrapy.pipelines.files.FilesPipeline': 2,
+#}
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
